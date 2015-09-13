@@ -1,0 +1,400 @@
+ h1, h2, h3 {
+	font-weight:normal;
+	margin: 0;
+	padding: 0;
+}
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+    font: 16px Helvetica, Arial, Sans-Serif; color: #636363; line-height: 24px;
+    background: #f2f0eb 
+	
+}
+
+#page-container {
+	width: 990px;
+	margin: auto;	
+}
+
+#person {
+	height: 100px;
+}
+
+#person .middle{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 25px;
+}
+
+.img{
+	margin-bottom: 10px;
+	margin-right: 25px;
+}
+#sidebar-a {
+	float: right;
+	width: 250px;
+	line-height: 14px;
+	
+}
+
+#sidebar-a a {
+	color: #666;
+	margin-left: 40px;
+	text-decoration: none;
+    	-moz-text-decoration-color: -moz-use-text-color;
+    	-moz-text-decoration-line: none;
+    	-moz-text-decoration-style: solid;
+}	
+#sidebar-a h3 {
+	margin-left: 20px;
+}
+
+#content {
+	margin-top: 25px;
+	margin-right: 280px;
+	line-height: 14px;
+}
+
+.headline{
+	margin-left: 20px;
+}
+#content .content_text {
+	padding:20px;
+	line-height: 30px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+#footer {
+	clear: both;
+	height: 80px;
+}
+
+hr.line_top { 
+	border-top: 1px dashed #f2f0eb;
+	border-bottom: 1px dashed #3c5ab4;
+	margin-bottom: 20px;
+}
+
+hr.line_bottom { 
+	border-top: 1px dashed #f2f0eb;
+	border-bottom: 1px dashed #3c5ab4;
+}	
+.verticalLine {
+    border-left: 1px dashed #3c5ab4;
+}
+
+/*----------------------------
+	Bottom main-navigsation bar
+-----------------------------*/
+.nav {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: table;
+  table-layout:  fixed;
+  
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 60px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  display: table-cell;
+  width: auto;
+  text-align: center;
+  
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+  display:inline-block;
+  width: 11em;
+}
+ 
+.nav a:hover {
+  background-color: #005f5f;
+  text-decoration:none;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+	
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+}
+ 
+  /* Option 1 - Display Inline */
+.nav li {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+
+/*----------------------------
+	Style the text boxes in contact
+-----------------------------*/
+
+input, textarea {
+	width:640px;
+	height:27px;
+	background:#fff;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+textarea {
+	height:250px;
+	background:url(img/WEBpost_pigeon.png) right no-repeat #fff;
+}
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+#submit {
+    width:127px;
+    height:38px;
+    background:url(img/TRbutton.gif);
+    text-indent:-9999px;
+    border:none;s
+    margin-top:20px;
+    cursor:pointer;
+}
+
+#submit:hover {
+	    opacity:.9;
+}
+
+/*----------------------------
+	Green filter bar
+-----------------------------*/
+
+
+#filter {
+	background: url("img/bar.png") repeat-x 0 -94px;
+	display: block;
+	height: 39px;
+	margin: 40px auto;
+	position: relative;
+	width: 900px;
+	text-align:center;
+	
+	-moz-box-shadow:0 4px 4px #000;
+	-webkit-box-shadow:0 4px 4px #000;
+	box-shadow:0 4px 4px #000;
+}
+
+#filter:before, #filter:after {
+	background: url("img/bar.png") no-repeat;
+	height: 43px;
+	position: absolute;
+	top: 0;
+	width: 78px;
+	content: '';
+	
+	-moz-box-shadow:0 2px 0 rgba(0,0,0,0.4);
+	-webkit-box-shadow:0 2px 0 rgba(0,0,0,0.4);
+	box-shadow:0 2px 0 rgba(0,0,0,0.4);
+}
+
+#filter:before {
+	background-position: 0 -47px;
+	left: -78px;
+}
+
+#filter:after {
+	background-position: 0 0;
+	right: -78px;
+}
+
+#filter a{
+	color: #FFFFFF;
+	display: inline-block;
+	height: -2px;
+	line-height: 39px;
+	padding: 1px 15px 0px;
+	text-shadow:1px 1px 1px #315218;
+}
+
+#filter a:hover{
+	text-decoration:none;
+}
+
+#filter a.active{
+	background: url("img/bar.png") repeat-x 0 -138px;
+	box-shadow:	1px 0 0 rgba(255, 255, 255, 0.2),
+				-1px 0 0 rgba(255, 255, 255, 0.2),
+				1px 0 1px rgba(0,0,0,0.2) inset,
+				-1px 0 1px rgba(0,0,0,0.2) inset;
+}
+
+    
+/*----------------------------
+	Content area
+-----------------------------*/
+
+
+#content_text{
+	padding:20px;
+	line-height: 30px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+#content_text li{
+
+	float: left;
+	height: 146px;
+	list-style: none outside none;
+	margin: 6px;
+	position: relative;
+	width: 195px;
+	
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+}
+
+#content_text ul{
+	overflow:hidden;
+}
+
+#content_text ul.hidden{
+	display:none;
+}
+
+.hidden {
+	display: none;
+}
+
+/*----------------------------
+	Download button for CV
+----------------------------- */
+.download_button {
+	background-color:#6d6d6d;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	position:relative;
+	padding:10px 20px;
+	padding-right:50px;
+	background-image: linear-gradient(bottom, #56982a 0%, #7ebb48 100%);
+	background-image: -o-linear-gradient(bottom, #56982a 0%, #7ebb48 100%);
+	background-image: -moz-linear-gradient(bottom, #56982a 0%, #7ebb48 100%);
+	background-image: -webkit-linear-gradient(bottom, #56982a 0%, #7ebb48 100%);
+	background-image: -ms-linear-gradient(bottom, #56982a 0%, #7ebb48 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, #56982a),
+	color-stop(1, #7ebb48)
+	);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0px 1px 0px #7ebb48, 0px 5px 0px 0px #355e1a, 0px 10px 5px #999;
+	-moz-box-shadow: inset 0px 1px 0px #7ebb48, 0px 5px 0px 0px #355e1a, 0px 10px 5px #999;
+	-o-box-shadow: inset 0px 1px 0px #7ebb48, 0px 5px 0px 0px #355e1a, 0px 10px 5px #999;
+	box-shadow: inset 0px 1px 0px #7ebb48, 0px 5px 0px 0px #355e1a, 0px 10px 5px #999;
+}
+
+.download_button:active {
+	top:3px;
+	background-image: linear-gradient(bottom, #7ebb48 0%, #56982a 100%);
+	background-image: -o-linear-gradient(bottom, #7ebb48 0%, r#56982a 100%);
+	background-image: -moz-linear-gradient(bottom, #7ebb48 0%, #56982a 100%);
+	background-image: -webkit-linear-gradient(bottom, #7ebb48 0%, r#56982a 100%);
+	background-image: -ms-linear-gradient(bottom, #7ebb48 0%, #56982a 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, #7ebb48),
+	color-stop(1, #56982a)
+	);
+	-webkit-box-shadow: inset 0px 1px 0px #355e1a, 0px 2px 0px 0px #7ebb48, 0px 5px 3px #999;
+	-moz-box-shadow: inset 0px 1px 0px #355e1a, 0px 2px 0px 0px #7ebb48, 0px 5px 3px #999;
+	-o-box-shadow: inset 0px 1px 0px #355e1a, 0px 2px 0px 0px #7ebb48, 0px 5px 3px #999;
+	box-shadow: inset 0px 1px 0px #355e1a, 0px 2px 0px 0px #7ebb48, 0px 5px 3px #999;
+}
+
+.download_button::before {
+	background-color:#6d6d6d;
+	background-image:url(img/right_arrow.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	content:"";
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:15px;
+	top:50%;
+	margin-top:-9px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: inset 0px 1px 0px #355e1a, 0px 1px 0px #7ebb48;
+	-moz-box-shadow: inset 0px 1px 0px #355e1a, 0px 1px 0px #7ebb48;
+	-o-box-shadow: inset 0px 1px 0px #355e1a, 0px 1px 0px #7ebb48;
+	box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #7ebb48;
+}
+
+.download_button:active::before {
+	top:50%;
+	margin-top:-12px;
+	-webkit-box-shadow: inset 0px 1px 0px #7ebb48, 0px 3px 0px #052756, 0px 6px 3px #316310;
+	-moz-box-shadow: inset 0px 1px 0px #7ebb48, 0px 3px 0px #052756, 0px 6px 3px #316310;
+	-o-box-shadow: inset 0px 1px 0px #7ebb48, 0px 3px 0px #052756, 0px 6px 3px #316310;
+	box-shadow: inset 0px 1px 0px #7ebb48, 0px 3px 0px #052756, 0px 6px 3px #316310;
+}
